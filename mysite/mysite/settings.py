@@ -32,13 +32,14 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'webapp',
-    'mailchimp',
+    'mailchimp3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +75,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Mailchimp API key
 MAILCHIMP_API_KEY='2067eef5ff2bcbff1536c1cefa24672c-us17'
+# Resolve mailchimp bug
+SITE_ID = 1
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
