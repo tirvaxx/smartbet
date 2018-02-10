@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'webapp',
+    'mailchimp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -70,6 +71,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
+
+# Mailchimp API key
+MAILCHIMP_API_KEY='2067eef5ff2bcbff1536c1cefa24672c-us17'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
