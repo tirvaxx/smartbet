@@ -8,18 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
   <meta name="description" content="">
+  
   <title>Home</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  {% load static %}
+  <link  type="text/css" href="{% static 'assets/web/assets/mobirise-icons/mobirise-icons.css' %}">
+  <link  type="text/css" href="{% static 'assets/tether/tether.min.css' %}">
+  <link  type="text/css" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+  <link  type="text/css" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+  <link  type="text/css" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+  <link  type="text/css" href="{% static 'assets/socicon/css/styles.css' %}">
+  <link  type="text/css" href="{% static 'assets/dropdown/css/style.css' %}">
+  <link  type="text/css" href="{% static 'assets/theme/css/style.css' %}">
+  <link  type="text/css" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
   
-  
+ 
   
 </head>
 <body>
@@ -39,7 +41,7 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="https://mobirise.com">
+                    <a href="{% static 'https://mobirise.com">
                          <img src="assets/images/logo2.png" alt="Mobirise" style="height: 3.8rem;">
                     </a>
                 </span>
@@ -95,7 +97,7 @@
     <div class="form-container">
         <div class="media-container-column" data-form-type="formoid">
             <div data-form-alert="" hidden="" class="align-center">Thanks for filling out the form!</div>
-            <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="sFjSyivVSpGr6F1ul144EgUkjNC5qhOG5v2nfaUXgvOlCkbGAmT7yTYxslPeTny5PEfZr0qhEHjCLPqNq4Zfp1PTrM1xNPyruIl2e2JxEdDKLZAUIDjzMZLGDKboh95E" data-form-field="Email">
+            <form class="mbr-form" action="/add_email_to_mailing_list" method="post" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="sFjSyivVSpGr6F1ul144EgUkjNC5qhOG5v2nfaUXgvOlCkbGAmT7yTYxslPeTny5PEfZr0qhEHjCLPqNq4Zfp1PTrM1xNPyruIl2e2JxEdDKLZAUIDjzMZLGDKboh95E" data-form-field="Email">
                 
                 <div data-for="email">
                     <div class="form-group">
