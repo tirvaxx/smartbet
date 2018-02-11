@@ -78,21 +78,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
-PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = os.path.dirname(PROJECT_DIR)
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
 
-# Static files (CSS, JavaScript, Images)
-STATICFILES_FINDERS = [
-'django.contrib.staticfiles.finders.FileSystemFinder',
-'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-]
 
-STATICFILES_DIRS = [                # For static files not particular to any app.
-os.path.join(PROJECT_DIR, 'static'),
-]
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+TEMPLATE_CONTEXT_PROCESSORS = (
+"django.core.context_processors.static",)
 
 # Mailchimp API key
 MAILCHIMP_API_KEY='2067eef5ff2bcbff1536c1cefa24672c-us17'
@@ -146,4 +143,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'webapp/static/'
