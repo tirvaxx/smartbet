@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html >
 <head>
@@ -6,21 +7,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v4.6.5, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+  <link rel="shortcut icon" href="static/assets/images/logo2.png" type="image/x-icon">
   <meta name="description" content="">
   
   <title>Home</title>
-  {% load static %}
-  <link  type="text/css" src="{% static "assets/web/assets/mobirise-icons/mobirise-icons.css" %}">
-  <link  type="text/css" src="{% static "assets/tether/tether.min.css" %}">
-  <link  type="text/css" src="{% static "assets/bootstrap/css/bootstrap.min.css" %}">
-  <link  type="text/css" src="{% static "assets/bootstrap/css/bootstrap-grid.min.css" %}">
-  <link  type="text/css" src="{% static "assets/bootstrap/css/bootstrap-reboot.min.css" %}">
-  <link  type="text/css" src="{% static "assets/socicon/css/styles.css" %}">
-  <link  type="text/css" src="{% static "assets/dropdown/css/style.css" %}">
-  <link  type="text/css" src="{% static "assets/theme/css/style.css" %}">
-  <link  type="text/css" src="{% static "assets/mobirise/css/mbr-additional.css" %}">
   
+  
+  <link  rel="stylesheet" type="text/css" href="{% static 'css/mobirise-icons.css' %}">
+  <link type="text/css" rel="stylesheet" href="{% static 'assets/tether/tether.min.css' %}">
+  <link type="text/css" rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+  <link type="text/css" rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+  <link type="text/css" rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+  <link type="text/css" rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+  <link type="text/css" rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+  <link type="text/css" rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+  <link type="text/css" rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}">
  
   
 </head>
@@ -219,10 +220,13 @@
 </section>
 
 
-  <script type="application/javascript" src="{% static 'assets/web/assets/jquery/jquery.min.js' %}" ></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   
   <script type="application/javascript" src="{% static 'assets/tether/tether.min.js' %}"></script>
-  <script type="application/javascript" src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+ 
   <script type="application/javascript" src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
   <script type="application/javascript" src="{% static 'assets/touchswipe/jquery.touch-swipe.min.js' %}"></script>
   <script type="application/javascript" src="{% static 'assets/parallax/jarallax.min.js' %}"></script>
